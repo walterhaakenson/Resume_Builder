@@ -6,37 +6,21 @@
     <title>ResumeForge - Professional Resume Builder</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-            animation: fadeIn 0.6s ease-out;
-        }
-    </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Landing Page -->
     <div id="landingPage" class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <!-- Navigation -->
         <nav class="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
             <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center gap-2">
                     <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                     </svg>
-                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                        ResumeForge
-                    </span>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">ResumeForge</span>
                 </div>
-                <button onclick="showBuilder()" class="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
-                    Get Started
-                </button>
+                <button onclick="showBuilder()" class="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md">Get Started</button>
             </div>
         </nav>
 
-        <!-- Hero Section -->
         <div class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
             <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +38,7 @@
                 Stand out from the crowd and land your dream job.
             </p>
 
-            <button onclick="showBuilder()" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 inline-flex items-center gap-2">
+            <button onclick="showBuilder()" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all inline-flex items-center gap-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
@@ -62,7 +46,6 @@
             </button>
         </div>
 
-        <!-- Features -->
         <div class="max-w-6xl mx-auto px-6 py-16">
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
@@ -72,9 +55,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Easy to Use</h3>
-                    <p class="text-gray-600">
-                        Intuitive interface that guides you through each step. No design skills needed.
-                    </p>
+                    <p class="text-gray-600">Intuitive interface that guides you through each step. No design skills needed.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
@@ -84,9 +65,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Professional Design</h3>
-                    <p class="text-gray-600">
-                        Clean, modern templates that get noticed by recruiters and hiring managers.
-                    </p>
+                    <p class="text-gray-600">Clean, modern templates that get noticed by recruiters and hiring managers.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
@@ -96,20 +75,15 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Instant PDF Download</h3>
-                    <p class="text-gray-600">
-                        Download your resume as a professional PDF ready to send to employers.
-                    </p>
+                    <p class="text-gray-600">Download your resume as a professional PDF ready to send to employers.</p>
                 </div>
             </div>
         </div>
 
-        <!-- CTA Section -->
         <div class="max-w-6xl mx-auto px-6 py-16 mb-16">
             <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-center text-white shadow-2xl">
                 <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
-                <p class="text-xl mb-8 opacity-90">
-                    Join thousands of job seekers who've landed their dream jobs
-                </p>
+                <p class="text-xl mb-8 opacity-90">Join thousands of job seekers who've landed their dream jobs</p>
                 <button onclick="showBuilder()" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-colors inline-flex items-center gap-2 shadow-lg">
                     Create Your Resume Now
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,9 +94,7 @@
         </div>
     </div>
 
-    <!-- Resume Builder -->
-    <div id="builderPage" class="hidden min-h-screen bg-gray-50">
-        <!-- Header -->
+    <div id="builderPage" style="display:none;" class="min-h-screen bg-gray-50">
         <div class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
             <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center gap-2">
@@ -140,10 +112,8 @@
             </div>
         </div>
 
-        <!-- Form -->
         <div class="max-w-5xl mx-auto px-6 py-8">
             <div class="bg-white rounded-xl shadow-md p-8">
-                <!-- Personal Info -->
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold mb-4 flex items-center gap-2 text-gray-800">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -161,13 +131,11 @@
                     </div>
                 </div>
 
-                <!-- Summary -->
                 <div class="mb-8">
                     <h2 class="text-2xl font-bold mb-4 text-gray-800">Professional Summary</h2>
                     <textarea id="summary" placeholder="Write a brief summary of your professional background and key strengths..." rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"></textarea>
                 </div>
 
-                <!-- Experience -->
                 <div class="mb-8">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-2xl font-bold flex items-center gap-2 text-gray-800">
@@ -186,7 +154,6 @@
                     <div id="experienceList"></div>
                 </div>
 
-                <!-- Education -->
                 <div class="mb-8">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-2xl font-bold flex items-center gap-2 text-gray-800">
@@ -206,7 +173,6 @@
                     <div id="educationList"></div>
                 </div>
 
-                <!-- Skills -->
                 <div class="mb-8">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-2xl font-bold flex items-center gap-2 text-gray-800">
@@ -225,7 +191,6 @@
                     <div id="skillsList" class="grid md:grid-cols-3 gap-4"></div>
                 </div>
 
-                <!-- Download Button -->
                 <div class="flex justify-center pt-6">
                     <button onclick="generatePDF()" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:shadow-lg transition-all flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -239,92 +204,76 @@
     </div>
 
     <script>
-        let experienceCounter = 0;
-        let educationCounter = 0;
-        let skillCounter = 0;
+        let expCounter = 0, eduCounter = 0, skillCounter = 0;
 
         function showBuilder() {
-            document.getElementById('landingPage').classList.add('hidden');
-            document.getElementById('builderPage').classList.remove('hidden');
+            document.getElementById('landingPage').style.display = 'none';
+            document.getElementById('builderPage').style.display = 'block';
         }
 
         function addExperience() {
-            const id = ++experienceCounter;
+            const id = ++expCounter;
             const html = `
-                <div id="exp-${id}" class="border border-gray-200 rounded-lg p-6 mb-4 bg-gray-50 animate-fadeIn">
+                <div id="exp-${id}" class="border border-gray-200 rounded-lg p-6 mb-4 bg-gray-50">
                     <div class="flex justify-end mb-3">
-                        <button onclick="removeExperience(${id})" class="text-red-600 hover:text-red-700 flex items-center gap-1">
+                        <button onclick="document.getElementById('exp-${id}').remove()" class="text-red-600 hover:text-red-700">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <input type="text" data-exp="${id}" data-field="title" placeholder="Job Title *" class="exp-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-exp="${id}" data-field="company" placeholder="Company *" class="exp-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-exp="${id}" data-field="location" placeholder="Location" class="exp-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-exp="${id}" data-field="startDate" placeholder="Start Date (e.g., Jan 2020)" class="exp-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-exp="${id}" data-field="endDate" id="exp-end-${id}" placeholder="End Date (e.g., Dec 2022)" class="exp-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
+                        <input type="text" data-exp="${id}" data-field="title" placeholder="Job Title *" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-exp="${id}" data-field="company" placeholder="Company *" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-exp="${id}" data-field="location" placeholder="Location" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-exp="${id}" data-field="startDate" placeholder="Start Date (e.g., Jan 2020)" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-exp="${id}" data-field="endDate" id="exp-end-${id}" placeholder="End Date" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
                         <label class="flex items-center gap-2">
-                            <input type="checkbox" data-exp="${id}" data-field="current" onchange="toggleEndDate(${id}, this.checked)" class="w-4 h-4 text-blue-600 rounded focus:ring-2 focus:ring-blue-500">
+                            <input type="checkbox" data-exp="${id}" data-field="current" onchange="toggleEnd(${id}, this.checked)" class="w-4 h-4">
                             <span class="text-gray-700">Currently working here</span>
                         </label>
                     </div>
-                    <textarea data-exp="${id}" data-field="description" placeholder="Describe your responsibilities and achievements..." rows="3" class="exp-field w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white"></textarea>
+                    <textarea data-exp="${id}" data-field="description" placeholder="Describe your responsibilities..." rows="3" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white"></textarea>
                 </div>
             `;
             document.getElementById('experienceList').insertAdjacentHTML('beforeend', html);
         }
 
-        function removeExperience(id) {
-            document.getElementById(`exp-${id}`).remove();
-        }
-
-        function toggleEndDate(id, isCurrent) {
-            const endDateInput = document.getElementById(`exp-end-${id}`);
-            if (isCurrent) {
-                endDateInput.disabled = true;
-                endDateInput.value = '';
-                endDateInput.classList.add('bg-gray-100');
-            } else {
-                endDateInput.disabled = false;
-                endDateInput.classList.remove('bg-gray-100');
-            }
+        function toggleEnd(id, current) {
+            const el = document.getElementById(`exp-end-${id}`);
+            el.disabled = current;
+            if(current) el.value = '';
         }
 
         function addEducation() {
-            const id = ++educationCounter;
+            const id = ++eduCounter;
             const html = `
-                <div id="edu-${id}" class="border border-gray-200 rounded-lg p-6 mb-4 bg-gray-50 animate-fadeIn">
+                <div id="edu-${id}" class="border border-gray-200 rounded-lg p-6 mb-4 bg-gray-50">
                     <div class="flex justify-end mb-3">
-                        <button onclick="removeEducation(${id})" class="text-red-600 hover:text-red-700 flex items-center gap-1">
+                        <button onclick="document.getElementById('edu-${id}').remove()" class="text-red-600 hover:text-red-700">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
                             </svg>
                         </button>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" data-edu="${id}" data-field="degree" placeholder="Degree *" class="edu-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-edu="${id}" data-field="school" placeholder="School/University *" class="edu-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-edu="${id}" data-field="location" placeholder="Location" class="edu-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-edu="${id}" data-field="graduationDate" placeholder="Graduation Date (e.g., May 2020)" class="edu-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
-                        <input type="text" data-edu="${id}" data-field="gpa" placeholder="GPA (optional)" class="edu-field border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white">
+                        <input type="text" data-edu="${id}" data-field="degree" placeholder="Degree *" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-edu="${id}" data-field="school" placeholder="School/University *" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-edu="${id}" data-field="location" placeholder="Location" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-edu="${id}" data-field="graduationDate" placeholder="Graduation Date" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                        <input type="text" data-edu="${id}" data-field="gpa" placeholder="GPA (optional)" class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
                     </div>
                 </div>
             `;
             document.getElementById('educationList').insertAdjacentHTML('beforeend', html);
         }
 
-        function removeEducation(id) {
-            document.getElementById(`edu-${id}`).remove();
-        }
-
         function addSkill() {
             const id = ++skillCounter;
             const html = `
-                <div id="skill-${id}" class="flex gap-2 animate-fadeIn">
-                    <input type="text" data-skill="${id}" placeholder="Skill name" class="skill-field flex-1 border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none">
-                    <button onclick="removeSkill(${id})" class="text-red-600 hover:text-red-700">
+                <div id="skill-${id}" class="flex gap-2">
+                    <input type="text" data-skill="${id}" placeholder="Skill name" class="flex-1 border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none">
+                    <button onclick="document.getElementById('skill-${id}').remove()" class="text-red-600 hover:text-red-700">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
                         </svg>
@@ -334,20 +283,15 @@
             document.getElementById('skillsList').insertAdjacentHTML('beforeend', html);
         }
 
-        function removeSkill(id) {
-            document.getElementById(`skill-${id}`).remove();
-        }
-
         function generatePDF() {
             const { jsPDF } = window.jspdf;
             const pdf = new jsPDF();
-            const pageWidth = pdf.internal.pageSize.getWidth();
-            const pageHeight = pdf.internal.pageSize.getHeight();
-            const margin = 20;
-            let y = margin;
+            const w = pdf.internal.pageSize.getWidth();
+            const h = pdf.internal.pageSize.getHeight();
+            const m = 20;
+            let y = m;
 
-            // Get personal info
-            const fullName = document.getElementById('fullName').value || 'Your Name';
+            const name = document.getElementById('fullName').value || 'Your Name';
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const location = document.getElementById('location').value;
@@ -355,156 +299,130 @@
             const website = document.getElementById('website').value;
             const summary = document.getElementById('summary').value;
 
-            // Header with name
             pdf.setFontSize(24);
             pdf.setFont(undefined, 'bold');
-            pdf.text(fullName, margin, y);
+            pdf.text(name, m, y);
             y += 8;
 
-            // Contact info
             pdf.setFontSize(10);
             pdf.setFont(undefined, 'normal');
-            const contactInfo = [email, phone, location, linkedin, website].filter(Boolean).join(' | ');
-            
-            if (contactInfo) {
-                pdf.text(contactInfo, margin, y);
+            const contact = [email, phone, location, linkedin, website].filter(Boolean).join(' | ');
+            if (contact) {
+                pdf.text(contact, m, y);
                 y += 10;
             }
 
-            // Line separator
             pdf.setDrawColor(0, 0, 0);
-            pdf.line(margin, y, pageWidth - margin, y);
+            pdf.line(m, y, w - m, y);
             y += 8;
 
-            // Professional Summary
             if (summary) {
                 pdf.setFontSize(14);
                 pdf.setFont(undefined, 'bold');
-                pdf.text('PROFESSIONAL SUMMARY', margin, y);
+                pdf.text('PROFESSIONAL SUMMARY', m, y);
                 y += 6;
-                
                 pdf.setFontSize(10);
                 pdf.setFont(undefined, 'normal');
-                const summaryLines = pdf.splitTextToSize(summary, pageWidth - 2 * margin);
-                pdf.text(summaryLines, margin, y);
-                y += summaryLines.length * 5 + 5;
+                const lines = pdf.splitTextToSize(summary, w - 2 * m);
+                pdf.text(lines, m, y);
+                y += lines.length * 5 + 5;
             }
 
-            // Experience
-            const experiences = [];
-            document.querySelectorAll('[data-exp]').forEach(field => {
-                const expId = field.getAttribute('data-exp');
-                const fieldName = field.getAttribute('data-field');
-                if (!experiences[expId]) experiences[expId] = {};
-                
-                if (field.type === 'checkbox') {
-                    experiences[expId][fieldName] = field.checked;
-                } else {
-                    experiences[expId][fieldName] = field.value;
-                }
+            const exps = {};
+            document.querySelectorAll('[data-exp]').forEach(el => {
+                const id = el.getAttribute('data-exp');
+                const field = el.getAttribute('data-field');
+                if (!exps[id]) exps[id] = {};
+                exps[id][field] = el.type === 'checkbox' ? el.checked : el.value;
             });
 
-            const experienceArray = Object.values(experiences).filter(exp => exp.title || exp.company);
-            
-            if (experienceArray.length > 0) {
+            const expArr = Object.values(exps).filter(e => e.title || e.company);
+            if (expArr.length > 0) {
                 pdf.setFontSize(14);
                 pdf.setFont(undefined, 'bold');
-                pdf.text('EXPERIENCE', margin, y);
+                pdf.text('EXPERIENCE', m, y);
                 y += 6;
 
-                experienceArray.forEach(exp => {
-                    if (y > pageHeight - 40) {
+                expArr.forEach(exp => {
+                    if (y > h - 40) {
                         pdf.addPage();
-                        y = margin;
+                        y = m;
                     }
-
                     pdf.setFontSize(11);
                     pdf.setFont(undefined, 'bold');
-                    pdf.text(exp.title || 'Job Title', margin, y);
+                    pdf.text(exp.title || 'Job Title', m, y);
                     y += 5;
-
                     pdf.setFontSize(10);
                     pdf.setFont(undefined, 'normal');
-                    const companyLine = `${exp.company || 'Company'} | ${exp.location || 'Location'} | ${exp.startDate || 'Start'} - ${exp.current ? 'Present' : exp.endDate || 'End'}`;
-                    pdf.text(companyLine, margin, y);
+                    const line = `${exp.company || 'Company'} | ${exp.location || 'Location'} | ${exp.startDate || 'Start'} - ${exp.current ? 'Present' : exp.endDate || 'End'}`;
+                    pdf.text(line, m, y);
                     y += 5;
-
                     if (exp.description) {
-                        const descLines = pdf.splitTextToSize(exp.description, pageWidth - 2 * margin);
-                        pdf.text(descLines, margin, y);
-                        y += descLines.length * 5 + 3;
+                        const desc = pdf.splitTextToSize(exp.description, w - 2 * m);
+                        pdf.text(desc, m, y);
+                        y += desc.length * 5 + 3;
                     }
                     y += 2;
                 });
                 y += 3;
             }
 
-            // Education
-            const education = [];
-            document.querySelectorAll('[data-edu]').forEach(field => {
-                const eduId = field.getAttribute('data-edu');
-                const fieldName = field.getAttribute('data-field');
-                if (!education[eduId]) education[eduId] = {};
-                education[eduId][fieldName] = field.value;
+            const edus = {};
+            document.querySelectorAll('[data-edu]').forEach(el => {
+                const id = el.getAttribute('data-edu');
+                const field = el.getAttribute('data-field');
+                if (!edus[id]) edus[id] = {};
+                edus[id][field] = el.value;
             });
 
-            const educationArray = Object.values(education).filter(edu => edu.degree || edu.school);
-            
-            if (educationArray.length > 0) {
-                if (y > pageHeight - 40) {
+            const eduArr = Object.values(edus).filter(e => e.degree || e.school);
+            if (eduArr.length > 0) {
+                if (y > h - 40) {
                     pdf.addPage();
-                    y = margin;
+                    y = m;
                 }
-
                 pdf.setFontSize(14);
                 pdf.setFont(undefined, 'bold');
-                pdf.text('EDUCATION', margin, y);
+                pdf.text('EDUCATION', m, y);
                 y += 6;
 
-                educationArray.forEach(edu => {
-                    if (y > pageHeight - 30) {
+                eduArr.forEach(edu => {
+                    if (y > h - 30) {
                         pdf.addPage();
-                        y = margin;
+                        y = m;
                     }
-
                     pdf.setFontSize(11);
                     pdf.setFont(undefined, 'bold');
-                    pdf.text(edu.degree || 'Degree', margin, y);
+                    pdf.text(edu.degree || 'Degree', m, y);
                     y += 5;
-
                     pdf.setFontSize(10);
                     pdf.setFont(undefined, 'normal');
-                    const eduLine = `${edu.school || 'School'} | ${edu.location || 'Location'} | ${edu.graduationDate || 'Graduation Date'}${edu.gpa ? ' | GPA: ' + edu.gpa : ''}`;
-                    pdf.text(eduLine, margin, y);
+                    const line = `${edu.school || 'School'} | ${edu.location || 'Location'} | ${edu.graduationDate || 'Date'}${edu.gpa ? ' | GPA: ' + edu.gpa : ''}`;
+                    pdf.text(line, m, y);
                     y += 7;
                 });
                 y += 3;
             }
 
-            // Skills
             const skills = [];
-            document.querySelectorAll('[data-skill]').forEach(field => {
-                if (field.value.trim()) {
-                    skills.push(field.value.trim());
-                }
+            document.querySelectorAll('[data-skill]').forEach(el => {
+                if (el.value.trim()) skills.push(el.value.trim());
             });
 
             if (skills.length > 0) {
-                if (y > pageHeight - 30) {
+                if (y > h - 30) {
                     pdf.addPage();
-                    y = margin;
+                    y = m;
                 }
-
                 pdf.setFontSize(14);
                 pdf.setFont(undefined, 'bold');
-                pdf.text('SKILLS', margin, y);
+                pdf.text('SKILLS', m, y);
                 y += 6;
-
                 pdf.setFontSize(10);
                 pdf.setFont(undefined, 'normal');
-                const skillsText = skills.join(' • ');
-                const skillsLines = pdf.splitTextToSize(skillsText, pageWidth - 2 * margin);
-                pdf.text(skillsLines, margin, y);
+                const skillText = skills.join(' • ');
+                const skillLines = pdf.splitTextToSize(skillText, w - 2 * m);
+                pdf.text(skillLines, m, y);
             }
 
             pdf.save('resume.pdf');
